@@ -21,7 +21,12 @@ apt-get update
 apt-get install tensorflow-model-server
 tensorflow_model_server --version
 
+
+
 #8. Run the tensorflow model server:
+a). save the variables and saved_model.pb in Version 1 folder.
+i.e. your folder structure can be exported_luo_model/1/.... This is done to ensure that the tensorflow
+model server is able to host and serve the model
 tensorflow_model_server --model_base_path=/home/ubuntu/exported_luo_model/ --rest_api_port=9000 --model_name=LanguageClassifier
 
 #9 Install Python Flask and Flask rest
