@@ -62,3 +62,6 @@ pairs = to_pairs(doc)
 clean_pairs = clean_pairs(pairs)
 # save clean pairs to file
 save_clean_data(clean_pairs, 'english-luo.pkl')
+
+for i in range(100):
+	print('[%s] => [%s]' % (clean_pairs[i,0], clean_pairs[i,1]))
